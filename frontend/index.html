@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoda Scraping Code</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/yoda-logo.png" alt="Yoda Logo">
+            </div>
+            <div class="header-text">
+                <h1>Yoda Scraping Code</h1>
+                <p>May the grants and funds be with you!</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="promo">
+            <div class="promo-container">
+                <p>
+                    Powered by:
+                    <br>  
+                    <a href="https://brightdata.com/products/web-scraper" target="_blank" rel="noopener">
+                        <img src="assets/bright-data-icon.png" alt="Bright Data" class="promo-icon">
+                    </a>
+                    <br>
+                    and
+                    <br>
+                    <a href="https://brightinitiative.com/" target="_blank" rel="noopener">
+                        <img src="assets/bright-initiative-icon.png" alt="Bright Initiative" class="promo-icon">
+                    </a>
+                    <br>
+                    <span>Catalyzing Global Change Through Access to Public Web Data!</span>
+                </p>
+            </div>
+        </section>        
+        <section id="filters">
+            <label for="industryFilter">Filter by Industry</label>
+            <select id="industryFilter" aria-label="Industry Filter">
+                <option value="">All Industries</option>
+                <option value="IT">IT</option>
+                <option value="Automation">Automation</option>
+                <option value="AI">AI</option>
+                <option value="Green Tech">Green Tech</option>
+            </select>
+            <input type="text" id="searchBar" placeholder="Search grants (e.g., AI research)">
+            <button id="searchButton">Search</button>
+        </section>
+        <section id="results">
+            <h2>Results</h2>
+            <canvas id="resultsChart"></canvas> <!-- Chart size dynamically controlled by CSS -->
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Grant Title</th>
+                        <th>Deadline</th>
+                        <th>Funding</th>
+                        <th>Description</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <section id="downloads">
+            <button id="downloadCsv">Download CSV</button>
+        </section>
+        <section id="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="currentPage">Page 1</span>
+            <button id="nextPage">Next</button>
+        </section>
+        <section id="footer-image">
+            <img src="assets/yoda-scraping.png" alt="Yoda Scraping Code" class="footer-img">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-links stacked">
+                <a href="https://x.com/pastsmartlink" target="_blank" rel="noopener" class="highlight-x">
+                    <img src="assets/logo.svg" alt="Follow me on X.com" class="x-icon"> Follow me on X.com
+                </a>
+            </div>
+            <p>May the Force be with you!</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:pastsmartlink@gmail.com">pastsmartlink@gmail.com</a></p>
+            </div>
+            <div class="social-links stacked">
+                <a href="https://github.com/PastSmartLink/Yoda-for-AI-Pipelines" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i> GitHub Repository
+                </a>
+                <a href="https://dev.to/yodachallenge" target="_blank" rel="noopener">
+                    <i class="fab fa-dev"></i> Dev.to
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
