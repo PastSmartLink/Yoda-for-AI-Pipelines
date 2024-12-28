@@ -40,3 +40,15 @@
    ```bash
    git clone https://github.com/yourusername/yoda-scraping-code.git
    cd yoda-scraping-code
+
+![1](https://github.com/user-attachments/assets/ca45c3e7-47a2-4ebf-8654-540b97c44579)
+
+![2](https://github.com/user-attachments/assets/fa809829-7771-4c76-b03c-8bf67a6cc313)
+
+![3](https://github.com/user-attachments/assets/169adca2-a1b1-4d1e-8d01-54b097e7f355)
+
+![4](https://github.com/user-attachments/assets/88cc31c0-f102-405a-b263-af95667e6eda)
+
+![5](https://github.com/user-attachments/assets/b327ad06-f98d-4a9c-8683-e5ff0259d1f4)
+
+![6](https://github.com/user-attachments/assets/cb7493b3-82b5-4ede-924b-ece3a91538b6)
